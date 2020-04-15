@@ -6,9 +6,9 @@
   Will take a CSV list of emails and compare against the selected team.
   Afterwards, you can bulk sync, bulk remove or bulk add.
 .NOTES
-  Version:        1.0
+  Version:        1.1
   Author:         Eric Wu
-  Creation Date:  2020-04-02
+  Creation Date:  2020-04-15
   Purpose/Change: Initial script development
 
 .EXAMPLE
@@ -22,7 +22,7 @@ Install-Module -Name MicrosoftTeams -AllowClobber -Scope CurrentUser
 
 Write-Host "Starting..."
 
-#Connect-MicrosoftTeams
+Connect-MicrosoftTeams
 
 $teamList = Get-Team -User $workemail
 
